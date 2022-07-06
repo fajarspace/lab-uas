@@ -37,7 +37,7 @@ class Antrian extends Controller
     
 
 
-    public function cs()
+    public function a()
     {
     // Mengambil value dari form dengan method POST
         
@@ -86,7 +86,7 @@ class Antrian extends Controller
     } 
 
 
-    public function pg()
+    public function b()
     {
     // Mengambil value dari form dengan method POST
     	
@@ -132,7 +132,7 @@ class Antrian extends Controller
     } 
 
 
-    public function pb()
+    public function c()
     {
     // Mengambil value dari form dengan method POST
     	
@@ -178,7 +178,7 @@ class Antrian extends Controller
     } 
 
 
-    public function png()
+    public function d()
     {
     // Mengambil value dari form dengan method POST
     	
