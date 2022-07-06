@@ -11,11 +11,9 @@
 <div class="hero-inner">
 <div class="hero-copy">
   <div class="card text-center bg-light">
-  <div class="card-body"></div>
   <div class="card-body">
   <h1 style="text-align: center;">Menu Antrian</h1>
   </div>
-  <div class="card-body"></div>
 </div>
                             
   </div>
