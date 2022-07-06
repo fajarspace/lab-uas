@@ -13,7 +13,7 @@
   <div class="card text-center bg-light">
   <div class="card-body"></div>
   <div class="card-body">
-  <h1 style="text-align: center;">Antrian Saat ini adalah</h1>
+  <h1 style="text-align: center;">Menu Antrian</h1>
   </div>
   <div class="card-body"></div>
 </div>
@@ -28,7 +28,7 @@
 <div class="row row-cols-1 row-cols-md-2">
 
   <div class="col mb-4">
-    <div class="card bg-primary mb-3">
+    <div class="card bg-info mb-3">
     <a style="color:white; text-decoration:none; text-align:center;" href="<?php echo base_url("antrian/a/4"); ?>">
     <div class="card-body" style="text-align: center; font-weight: bold;"></div>
       <div class="card-body">
@@ -40,7 +40,7 @@
   </div>
 
   <div class="col mb-4">
-    <div class="card bg-success mb-3">
+    <div class="card bg-primary mb-3">
     <a style="color:white; text-decoration:none; text-align:center;" href="<?php echo base_url("antrian/b/5"); ?>">
     <div class="card-body" style="text-align: center; font-weight: bold;"></div>
       <div class="card-body">
@@ -52,7 +52,7 @@
   </div>
 
   <div class="col mb-4">
-    <div class="card bg-warning mb-3">
+    <div class="card bg-secondary mb-3">
     <a style="color:white; text-decoration:none; text-align:center;" href="<?php echo base_url("antrian/c/6"); ?>">
     <div class="card-body" style="text-align: center; font-weight: bold;"></div>
       <div class="card-body">
@@ -63,7 +63,7 @@
     </div>
   </div>
   <div class="col mb-4">
-    <div class="card bg-secondary mb-3">
+    <div class="card bg-success mb-3">
     <a style="color:white; text-decoration:none; text-align:center;" href="<?php echo base_url("antrian/d/7"); ?>">
     <div class="card-body" style="text-align: center; font-weight: bold;"></div>
       <div class="card-body">

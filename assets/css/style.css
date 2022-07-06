@@ -1,0 +1,149 @@
+.col-a {
+    background-color: #E69138;
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+    width: 1000px;
+    height: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.col-b {
+    background-color: #6D9EEB;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    width: 485px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 10px 10px 20px 10px;
+    padding: 10px 0 0 0 ;
+}
+.col-b a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn btn-primary{
+    padding: 500px;
+}
+
+/* css antrian */
+.col-12{
+    background-color: #4472C4;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.antrian{
+    background-color: #93C47D;
+    width: 450px;
+    height: 270px;
+    border: solid #000;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.antrian h5{
+    color: #fff;
+    height: 50px;
+    background-color: #FF9900;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+
+}
+.antrian p{
+    color: #fff;
+    font-size: 93px;
+    font-weight: bold;
+    text-align: center;
+}
+.loket{
+    width: 192px;
+    height: 130px;
+    background-color: #6FA8DC;
+    margin-right: 10px;
+}
+.loket p{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 55px;
+}
+.loket h5{
+    color: #fff;
+    height: 30px;
+    background-color: #0B5394;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+}
+.dilayani {
+    background-color: #93C47D;
+    width: 400px;
+    height: 270px;
+    border: solid #000;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.dilayani h5 {
+    color: #fff;
+    height: 50px;
+    background-color: #FF9900;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+
+}
+
+.dilayani p {
+    color: #fff;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+.btn-selesai{
+    background-color: #FF9900;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.daftar{
+    width: 600px;
+}
+.daftar h4{
+    background-color: #FF9900;
+    margin: 10px 50px 10px 50px;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.table{
+    color: #000;
+    text-align: center;
+}
+.table thead{
+    background-color: #D9EAD3;
+}
+.table a{
+    background-color: #274E13;
+    color: #fff;
+    padding: 5px 30px 5px 30px;
+    border-radius: 10px;
+}
+
+
+
+
+
