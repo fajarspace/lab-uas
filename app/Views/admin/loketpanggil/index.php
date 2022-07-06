@@ -11,10 +11,18 @@
   $dd = $data7["id"];
 } ?>
 
+
 <?= $this->extend('/layouts/tempelate-admin'); ?>
 
 <?= $this->section('content'); ?>
-    <div class="container">
+
+<!-- Begin Page Content -->
+<div class="container">
+
+    <!-- Page Heading -->
+        <div class="col-12">
+            Pelayanan Loket 1 (Customer Service)
+        </div>
         <?php if (!empty(session()->getFlashdata("success"))) { ?>
  
         <div class="alert alert-success">
@@ -37,91 +45,115 @@
         </div>
              
         <?php } ?>
-    </div>
-    <div class="container">
-        <a href="<?php echo base_url(
-          ""
-        ); ?>" class="btn btn-primary float-right mb-3">Home</a>
-        <div class="table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <th>No</th>
-                    <th>Jenis Layanan</th>
-                    <th>Loket</th>
-                    <th>No Antrian</th>
-                    <th>Action</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Customer Service</td>
-                        <td>1</td>
-                        <td>A<?php echo $aa; ?></td>
-                        <td>
-                        <div class="btn-group">
-                              <?php if (is_numeric($aa)) {
-                                echo "<a href='" .
-                                  base_url("loketpanggil/edit/" . $aa) .
-                                  "' class='btn btn-success'>Panggil</a>";
-                              } else {
-                                echo "<a class='btn btn-danger'>Kosong<a>";
-                              } ?> 
-                         </div>
-                     </td>
-                    </tr>
-                     <tr>
-                        <td>2</td>
-                        <td>Pengaduan</td>
-                        <td>2</td>
-                        <td>B<?php echo $bb; ?></td>
-                        <td>
-                        <div class="btn-group">
-                             <?php if (is_numeric($bb)) {
-                               echo "<a href='" .
-                                 base_url("loketpanggil/edit/" . $bb) .
-                                 "' class='btn btn-success'>Panggil</a>";
-                             } else {
-                               echo "<a class='btn btn-danger'>Kosong<a>";
-                             } ?> 
-                         </div>
-                     </td>
-                    </tr>
-                     <tr>
-                        <td>3</td>
-                        <td>Permohonan Baru</td>
-                        <td>3</td>
-                        <td>C<?php echo $cc; ?></td>
-                        <td>
-                        <div class="btn-group">
-                              <?php if (is_numeric($cc)) {
-                                echo "<a href='" .
-                                  base_url("loketpanggil/edit/" . $cc) .
-                                  "' class='btn btn-success'>Panggil</a>";
-                              } else {
-                                echo "<a class='btn btn-danger'>Kosong<a>";
-                              } ?> 
-                         </div>
-                     </td>
-                    </tr>
-                     <tr>
-                        <td>4</td>
-                        <td>Perpanjangan</td>
-                        <td>4</td>
-                        <td>D<?php echo $dd; ?></td>
-                        <td>
-                        <div class="btn-group">
-                              <?php if (is_numeric($dd)) {
-                                echo "<a href='" .
-                                  base_url("loketpanggil/edit/" . $dd) .
-                                  "' class='btn btn-success'>Panggil</a>";
-                              } else {
-                                echo "<a class='btn btn-danger'>Kosong<a>";
-                              } ?> 
-                         </div>
-                     </td>
-                    </tr>
-                </tbody>
-            </table>
+
+    <div class=card>
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-dilayani">
+                        <div class="dilayani">
+                            <h5>Sedang Dilayani</h5>
+                            <p><?php foreach ($antrianlast as $key => $data40) {
+                      if ($data40["id"] == $aa) {
+                        echo "A";
+                      }
+                      if ($data40["id"] == $bb) {
+                        echo "B";
+                      }
+                      if ($data40["id"] == $cc) {
+                        echo "C";
+                      }
+                      if ($data40["id"] == $dd) {
+                        echo "D";
+                      }
+                      echo $data40["id"];
+                    } ?></p>
+                        </div>
+                        <button type="button" class="btn-selesai">Selesai</button>
+                    </div>
+                    <div class="daftar">
+                        <h4>Daftar Antrian Selanjutnya</h4>
+                        <table class="table" border="1" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>No Antrian</th>
+                                    <th>Panggil</th>
+                                    <th>Keterangan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A<?php echo $aa; ?></td>
+                                    <td>
+                                        <?php if (is_numeric($aa)) {
+                                    echo "<a href='" .
+                                      base_url("loketpanggil/edit/" . $aa) .
+                                      "' class='btn btn-success'>Panggil</a>";
+                                  } else {
+                                    echo "Kosong";
+                                  } ?> 
+                                    </td>
+                                    <td>Ada</td>
+                                </tr>
+                                <tr>
+                                    <td>B<?php echo $bb; ?></td>
+                                    <td>
+                                    <?php if (is_numeric($bb)) {
+                                    echo "<a href='" .
+                                      base_url("loketpanggil/edit/" . $bb) .
+                                      "' class='btn btn-success'>Panggil</a>";
+                                  } else {
+                                    echo "Kosong";
+                                  } ?> 
+                                    </td>
+                                    <td>Ada</td>
+                                </tr>
+                                <tr>
+                                    <td>C<?php echo $cc; ?></td>
+                                    <td>
+ 
+                                  <?php if (is_numeric($cc)) {
+                                    echo "<a href='" .
+                                      base_url("loketpanggil/edit/" . $cc) .
+                                      "' class='btn btn-success'>Panggil</a>";
+                                  } else {
+                                    echo "Kosong";
+                                  } ?> 
+  
+                                    </td>
+                                    <td>Ada</td>
+                                </tr>
+                                <tr>
+                                    <td>D<?php echo $dd; ?></td>
+                                    <td>
+                                        <?php if (is_numeric($dd)) {
+                                    echo "<a href='" .
+                                      base_url("loketpanggil/edit/" . $dd) .
+                                      "' class='btn btn-success'>Panggil</a>";
+                                  } else {
+                                    echo "Kosong";
+                                  } ?> 
+                                    </td>
+                                    <td>Ada</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+
+                </div>
+            </div>
         </div>
     </div>
+
+
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
 <?= $this->endSection(); ?>
+
