@@ -1,14 +1,14 @@
 <?php foreach ($antrian4 as $key => $data4) {
-  $aa = $data4["id"];
+    $aa = $data4["id"];
 } ?>
 <?php foreach ($antrian5 as $key => $data5) {
-  $bb = $data5["id"];
+    $bb = $data5["id"];
 } ?>
 <?php foreach ($antrian6 as $key => $data6) {
-  $cc = $data6["id"];
+    $cc = $data6["id"];
 } ?>
 <?php foreach ($antrian7 as $key => $data7) {
-  $dd = $data7["id"];
+    $dd = $data7["id"];
 } ?>
 
 
@@ -20,31 +20,31 @@
 <div class="container pb-5">
 
     <!-- Page Heading -->
-        <div class="col-12">
-            Pelayanan Loket 1 (Customer Service)
-        </div>
-        <?php if (!empty(session()->getFlashdata("success"))) { ?>
- 
+    <div class="col-12">
+        Pelayanan Loket 1 (Customer Service)
+    </div>
+    <?php if (!empty(session()->getFlashdata("success"))) { ?>
+
         <div class="alert alert-success">
             <?php echo session()->getFlashdata("success"); ?>
         </div>
-             
-        <?php } ?>
-        <?php if (!empty(session()->getFlashdata("info"))) { ?>
- 
+
+    <?php } ?>
+    <?php if (!empty(session()->getFlashdata("info"))) { ?>
+
         <div class="alert alert-info">
             <?php echo session()->getFlashdata("info"); ?>
         </div>
-             
-        <?php } ?>
- 
-        <?php if (!empty(session()->getFlashdata("warning"))) { ?>
- 
+
+    <?php } ?>
+
+    <?php if (!empty(session()->getFlashdata("warning"))) { ?>
+
         <div class="alert alert-warning">
             <?php echo session()->getFlashdata("warning"); ?>
         </div>
-             
-        <?php } ?>
+
+    <?php } ?>
 
     <div class=card>
         <div class="card-body">
@@ -72,21 +72,18 @@
                                     <td>A<?php echo $aa; ?></td>
                                     <td>
                                         <?php if (is_numeric($aa)) {
-                                    echo "<a href='" .
-                                      base_url("loketpanggil/edit/" . $aa) .
-                                      "' class='btn btn-success'>Panggil</a>";
-                                  } else {
-                                    echo "<a class='btn btn-danger'>Kosong</a>";
-                                  } ?> 
+                                            echo "<a href='" .
+                                                base_url("loketpanggil/edit/" . $aa) .
+                                                "' class='btn btn-success'>Panggil</a>";
+                                        } else {
+                                            echo "<a class='btn btn-danger'>Kosong</a>";
+                                        } ?>
                                     </td>
                                     <td>Ada</td>
                                 </tr>
-                                
                             </tbody>
                         </table>
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -99,4 +96,3 @@
 
 <!-- End of Main Content -->
 <?= $this->endSection(); ?>
-

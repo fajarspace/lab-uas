@@ -2,29 +2,29 @@
 
 <?= $this->section('content'); ?>
 <div class="container">
-<?php
-if(!empty(session()->getFlashdata('success'))){ ?>
+  <?php
+  if (!empty(session()->getFlashdata('success'))) { ?>
 
-<div class="alert alert-success">
-    <?php echo session()->getFlashdata('success');?>
-</div>
-     
-<?php } ?>
-<?php if(!empty(session()->getFlashdata('info'))){ ?>
+    <div class="alert alert-success">
+      <?php echo session()->getFlashdata('success'); ?>
+    </div>
 
-<div class="alert alert-info">
-    <?php echo session()->getFlashdata('info');?>
-</div>
-     
-<?php } ?>
+  <?php } ?>
+  <?php if (!empty(session()->getFlashdata('info'))) { ?>
 
-<?php if(!empty(session()->getFlashdata('warning'))){ ?>
+    <div class="alert alert-info">
+      <?php echo session()->getFlashdata('info'); ?>
+    </div>
 
-<div class="alert alert-warning">
-    <?php echo session()->getFlashdata('warning');?>
-</div>
-     
-<?php } ?>
+  <?php } ?>
+
+  <?php if (!empty(session()->getFlashdata('warning'))) { ?>
+
+    <div class="alert alert-warning">
+      <?php echo session()->getFlashdata('warning'); ?>
+    </div>
+
+  <?php } ?>
 </div>
 <div class="container">
   <a href="<?php echo base_url('loket/create'); ?>" class="btn btn-success float-right mb-3">Tambah Loket </a>
@@ -38,24 +38,24 @@ if(!empty(session()->getFlashdata('success'))){ ?>
         <th>Layanan</th>
         <th>Aksi</th>
       </thead>
-      <tbody> <?php 
-            foreach($loket as $key => $data) { ?> <tr>
-          <td> <?php echo $key+1; ?> </td>
-          <td> <?php echo $data['nama']; ?> </td>
-          <td> <?php echo $data['keterangan']; ?> </td>
-          <td> <?php echo $data['pelayanan_id']; ?> </td>
-          <td>
-            <div class="btn-group">
-              <a href="<?php echo base_url('loket/edit/'.$data['id']); ?>" class="btn btn-warning btn-sm">
-                <i class="fas fa-edit"></i>
-              </a>
-              &emsp;
-              <a href="<?php echo base_url('loket/delete/'.$data['id']); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus Loket <?php echo $data['nama']; ?> ini?')">
-                <i class="fas fa-trash-alt"></i>
-              </a>
-            </div>
-          </td>
-        </tr> <?php } ?> </tbody>
+      <tbody> <?php
+              foreach ($loket as $key => $data) { ?> <tr>
+            <td> <?php echo $key + 1; ?> </td>
+            <td> <?php echo $data['nama']; ?> </td>
+            <td> <?php echo $data['keterangan']; ?> </td>
+            <td> <?php echo $data['pelayanan_id']; ?> </td>
+            <td>
+              <div class="btn-group">
+                <a href="<?php echo base_url('loket/edit/' . $data['id']); ?>" class="btn btn-warning btn-sm">
+                  <i class="fas fa-edit"></i>
+                </a>
+                &emsp;
+                <a href="<?php echo base_url('loket/delete/' . $data['id']); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus Loket <?php echo $data['nama']; ?> ini?')">
+                  <i class="fas fa-trash-alt"></i>
+                </a>
+              </div>
+            </td>
+          </tr> <?php } ?> </tbody>
     </table>
   </div>
 </div>

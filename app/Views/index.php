@@ -1,7 +1,7 @@
 <?= $this->extend('/layouts/tempelate'); ?>
 
 <?= $this->section('content'); ?>
-<div class="container" >
+<div class="container">
 
     <h1>Halo, ini halaman User!</h1>
 

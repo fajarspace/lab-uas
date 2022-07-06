@@ -1,7 +1,11 @@
-<?= $this->extend('/layouts/tempelate-antrian'); ?> <?= $this->section('content'); ?> <div class="container">
-  <div class="body-wrap boxed-container"> <?php foreach ($antrian as $key => $data) {
-$a = $data["id"];
-} ?> <main>
+<?= $this->extend('/layouts/tempelate-antrian'); ?>
+<?= $this->section('content'); ?>
+<div class="container">
+  <div class="body-wrap boxed-container">
+    <?php foreach ($antrian as $key => $data) {
+      $a = $data["id"];
+    } ?>
+    <main>
       <section class="hero">
         <div class="container">
           <div class="hero-inner">
@@ -11,23 +15,24 @@ $a = $data["id"];
                 <div class="card text-center">
                   <div class="card-header bg-primary"> NOMOR ANTRIAN </div>
                   <div class="card-body">
-                    <h1 class="hero-paragraph is-revealing"> <?php
-        $request = \Config\Services::request();
-        $s = $request->uri->getSegment(3);
-        if ($s == "4") {
-          echo "A" .
-            $a;
-        } elseif ($s == "5") {
-          echo "B" .
-            $a;
-        } elseif ($s == "6") {
-          echo "C" .
-            $a;
-        } elseif ($s == "7") {
-          echo "D" .
-            $a;
-        }
-        ?> </h1>
+                    <h1 class="hero-paragraph is-revealing">
+                      <?php
+                      $request = \Config\Services::request();
+                      $s = $request->uri->getSegment(3);
+                      if ($s == "4") {
+                        echo "A" .
+                          $a;
+                      } elseif ($s == "5") {
+                        echo "B" .
+                          $a;
+                      } elseif ($s == "6") {
+                        echo "C" .
+                          $a;
+                      } elseif ($s == "7") {
+                        echo "D" .
+                          $a;
+                      }
+                      ?> </h1>
                     <h3>Akan tercetak otomatis . . . </h3>
                   </div>
                 </div>
@@ -52,7 +57,6 @@ $a = $data["id"];
       </section>
     </main>
   </div>
-  <script src="
-            <?php echo base_url("dist/js/main.min.js"); ?>">
+  <script src="<?php echo base_url("dist/js/main.min.js"); ?>">
   </script>
 </div> <?= $this->endSection(); ?>
