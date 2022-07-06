@@ -20,6 +20,9 @@ class Antrianno extends Controller
  
     public function index()
     {
+        $data = [
+            'title' => 'Ambil Antrian'
+        ];
          $data['antrian4'] = $this->antrian->getAntrianno(4);
          $data['antrian5'] = $this->antrian->getAntrianno(5);
          $data['antrian6'] = $this->antrian->getAntrianno(6);
@@ -32,17 +35,23 @@ class Antrianno extends Controller
 
 	public function edite()
     {
-  		 $data['antrian4'] = $this->antrian->getAntrianno(4);
-         $data['antrian5'] = $this->antrian->getAntrianno(5);
-         $data['antrian6'] = $this->antrian->getAntrianno(6);
-         $data['antrian7'] = $this->antrian->getAntrianno(1);
+        $data = [
+            'title' => 'Edit'
+        ];
+        $data['antrian4'] = $this->antrian->getAntrianno(4);
+        $data['antrian5'] = $this->antrian->getAntrianno(5);
+        $data['antrian6'] = $this->antrian->getAntrianno(6);
+        $data['antrian7'] = $this->antrian->getAntrianno(1);
         echo view('antrian/edit2', $data);
 		
 	}
 
     public function cek()
     {
-         $data['antrianlast'] = $this->antrian->getAntrianlast(7);
+        $data = [
+            'title' => 'Cek'
+        ];
+        $data['antrianlast'] = $this->antrian->getAntrianlast(7);
         echo view('antrian/cek', $data);
         
     }

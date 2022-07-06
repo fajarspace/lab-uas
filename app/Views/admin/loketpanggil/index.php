@@ -70,7 +70,7 @@
                         <td>1</td>
                         <td>Customer Service</td>
                         <td>1</td>
-                        <td>CS<?php echo $aa; ?></td>
+                        <td>A<?php echo $aa; ?></td>
                         <td>
                         <div class="btn-group">
                               <?php if (is_numeric($aa)) {
@@ -87,7 +87,7 @@
                         <td>2</td>
                         <td>Pengaduan</td>
                         <td>2</td>
-                        <td>PGDN<?php echo $bb; ?></td>
+                        <td>B<?php echo $bb; ?></td>
                         <td>
                         <div class="btn-group">
                              <?php if (is_numeric($bb)) {
@@ -104,7 +104,7 @@
                         <td>3</td>
                         <td>Permohonan Baru</td>
                         <td>3</td>
-                        <td>PB<?php echo $cc; ?></td>
+                        <td>C<?php echo $cc; ?></td>
                         <td>
                         <div class="btn-group">
                               <?php if (is_numeric($cc)) {
@@ -121,7 +121,7 @@
                         <td>4</td>
                         <td>Perpanjangan</td>
                         <td>4</td>
-                        <td>PNG<?php echo $dd; ?></td>
+                        <td>D<?php echo $dd; ?></td>
                         <td>
                         <div class="btn-group">
                               <?php if (is_numeric($dd)) {

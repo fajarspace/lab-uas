@@ -29,7 +29,8 @@ class Antrian extends Controller
 
 	public function edite()
     {
-  		 $data['antrian'] = $this->antrian->getAntrian();
+        
+  		$data['antrian'] = $this->antrian->getAntrian();
         echo view('pages/antrian/edit2', $data);
 		
 	}
@@ -39,11 +40,12 @@ class Antrian extends Controller
     public function cs()
     {
     // Mengambil value dari form dengan method POST
-
+        
     	$oke =  date('y-m-d H:i:s'); 
  
     // Membuat array collection yang disiapkan untuk insert ke tablehttps://codeigniter.com/user_guide/database/index.html
-   $data = [
+    
+    $data = [
         'tanggal' =>  $oke,
         'status' => 'mengantri',
         'waktu_panggil' => null,
