@@ -19,7 +19,7 @@
       <div class="row row-cols-1 row-cols-md-2">
         <?php foreach ($pelayanan->getResultArray() as $row) : ?>
         <div class="col mb-4">
-          <div class="card bg-info mb-3">
+          <div class="card bg-primary mb-3">
             <a style="color:white; text-decoration:none; text-align:center;" href="
               <?php echo base_url(); ?>/antrian/<?= $row['kode']; ?>/<?= $row['id']; ?>">
               <div class="card-body" style="text-align: center; font-weight: bold;"></div>

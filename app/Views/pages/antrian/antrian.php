@@ -9,7 +9,7 @@ $a = $data["id"];
               <br>
               <div class="container">
                 <div class="card text-center">
-                  <div class="card-header bg-primary"> NO ANTRIAN </div>
+                  <div class="card-header bg-primary"> NOMOR ANTRIAN </div>
                   <div class="card-body">
                     <h1 class="hero-paragraph is-revealing"> <?php
         $request = \Config\Services::request();
@@ -28,7 +28,7 @@ $a = $data["id"];
             $a;
         }
         ?> </h1>
-                    <a href="#">asd</a>
+                    <h3>Akan tercetak otomatis . . . </h3>
                   </div>
                 </div>
               </div>

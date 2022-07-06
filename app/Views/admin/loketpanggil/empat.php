@@ -19,10 +19,6 @@
 <!-- Begin Page Content -->
 <div class="container pb-5">
 
-    <!-- Page Heading -->
-        <div class="col-12">
-            Pelayanan Loket 1 (Customer Service)
-        </div>
         <?php if (!empty(session()->getFlashdata("success"))) { ?>
  
         <div class="alert alert-success">
@@ -46,6 +42,14 @@
              
         <?php } ?>
 
+<!-- Begin Page Content -->
+<div id="loket4" class="container mt-5 pb-5">
+
+    <!-- Page Heading -->
+        <div class="col-12">
+            Pelayanan Loket 4
+        </div>
+
     <div class=card>
         <div class="card-body">
             <div class="container">
@@ -53,7 +57,7 @@
                     <div class="col-dilayani">
                         <div class="dilayani">
                             <h5>Sedang Dilayani</h5>
-                            <p>A<?php echo $aa; ?></p>
+                            <p>D<?php echo $dd; ?></p>
                         </div>
                         <button type="button" class="btn-selesai">Selesai</button>
                     </div>
@@ -67,13 +71,13 @@
                                     <th>Keterangan</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody> 
                                 <tr>
-                                    <td>A<?php echo $aa; ?></td>
+                                    <td>D<?php echo $dd; ?></td>
                                     <td>
-                                        <?php if (is_numeric($aa)) {
+                                        <?php if (is_numeric($dd)) {
                                     echo "<a href='" .
-                                      base_url("loketpanggil/edit/" . $aa) .
+                                      base_url("loketpanggil/edit/" . $dd) .
                                       "' class='btn btn-success'>Panggil</a>";
                                   } else {
                                     echo "<a class='btn btn-danger'>Kosong</a>";

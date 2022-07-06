@@ -19,10 +19,6 @@
 <!-- Begin Page Content -->
 <div class="container pb-5">
 
-    <!-- Page Heading -->
-        <div class="col-12">
-            Pelayanan Loket 1 (Customer Service)
-        </div>
         <?php if (!empty(session()->getFlashdata("success"))) { ?>
  
         <div class="alert alert-success">
@@ -46,6 +42,14 @@
              
         <?php } ?>
 
+<!-- Begin Page Content -->
+<div id="loket2" class="container mt-5 pb-5">
+
+    <!-- Page Heading -->
+        <div class="col-12">
+            Pelayanan Loket 2
+        </div>
+
     <div class=card>
         <div class="card-body">
             <div class="container">
@@ -53,7 +57,7 @@
                     <div class="col-dilayani">
                         <div class="dilayani">
                             <h5>Sedang Dilayani</h5>
-                            <p>A<?php echo $aa; ?></p>
+                            <p>B<?php echo $bb; ?></p>
                         </div>
                         <button type="button" class="btn-selesai">Selesai</button>
                     </div>
@@ -69,11 +73,11 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>A<?php echo $aa; ?></td>
+                                    <td>B<?php echo $bb; ?></td>
                                     <td>
-                                        <?php if (is_numeric($aa)) {
+                                    <?php if (is_numeric($bb)) {
                                     echo "<a href='" .
-                                      base_url("loketpanggil/edit/" . $aa) .
+                                      base_url("loketpanggil/edit/" . $bb) .
                                       "' class='btn btn-success'>Panggil</a>";
                                   } else {
                                     echo "<a class='btn btn-danger'>Kosong</a>";
@@ -95,6 +99,7 @@
 
 </div>
 <!-- /.container-fluid -->
+
 
 
 <!-- End of Main Content -->

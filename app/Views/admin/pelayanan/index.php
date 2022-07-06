@@ -1,4 +1,4 @@
-<?= $this->extend('/layouts/tempelate-admin'); ?> 
+<?= $this->extend('/layouts/tempelate'); ?> 
 <?= $this->section('content'); ?> 
 <div class="container"> 
     <?php
@@ -22,9 +22,9 @@
       <thead>
         <th>No</th>
         <th>Name</th>
-        <th>Code</th>
-        <th>Description</th>
-        <th>Action</th>
+        <th>Kode</th>
+        <th>Keterangan</th>
+        <th>Aksi</th>
       </thead>
       <tbody> <?php 
                     foreach($pelayanan as $key => $data) { ?> <tr>

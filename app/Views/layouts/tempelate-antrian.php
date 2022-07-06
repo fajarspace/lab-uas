@@ -14,9 +14,9 @@
     <!-- FONTAWESOME /-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!--script>setTimeout(function(){window.location.href='<?php echo base_url(
+    <script>setTimeout(function(){window.location.href='<?php echo base_url(
       "/antrian"
-    ); ?>'},1000);</script-->
+    ); ?>'},2000);</script>
     <title>Ambil Antrian</title>
 </head>
 <body>

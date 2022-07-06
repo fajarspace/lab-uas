@@ -28,7 +28,7 @@ if(!empty(session()->getFlashdata('success'))){ ?>
 </div>
 <div class="container">
   <a href="<?php echo base_url('loket/create'); ?>" class="btn btn-success float-right mb-3">Tambah Loket </a>
-  <h4>Antrian Menggunakan Codeigniter 4</h4>
+  <h4>Loket</h4>
   <div class="table-responsive">
     <table class="table table-bordered">
       <thead>
@@ -36,7 +36,7 @@ if(!empty(session()->getFlashdata('success'))){ ?>
         <th>Name</th>
         <th>Keterangan</th>
         <th>Layanan</th>
-        <th>Action</th>
+        <th>Aksi</th>
       </thead>
       <tbody> <?php 
             foreach($loket as $key => $data) { ?> <tr>

@@ -29,7 +29,16 @@
     <div class="navbar-nav">
       <a class="nav-link" href="/antrian">Ambil antrian</a>
       <a class="nav-link" href="/antrianno">Layar antrian</a>
-      <a class="nav-link" href="/loketpanggil">Loket Panggil</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="/loketpanggil" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Loket Panggil
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="<?php base_url(); ?>/loketpanggil">Loket 1</a>
+          <a class="dropdown-item" href="<?php base_url(); ?>/loketpanggil/dua">Loket 2</a>
+          <a class="dropdown-item" href="<?php base_url(); ?>/loketpanggil/tiga">Loket 3</a>
+          <a class="dropdown-item" href="<?php base_url(); ?>/loketpanggil/empat">Loket 4</a>
+      </li>
       <a class="nav-link" href="/loket">Loket</a>
       <a class="nav-link" href="/pelayanan">Pelayanan</a>
     </div>

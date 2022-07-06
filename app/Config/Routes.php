@@ -34,6 +34,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/antrian', 'Tpelayanan::antrianindex');
+$routes->get('/loketpanggil/dua', 'loketpanggil::dua');
+$routes->get('/loketpanggil/tiga', 'loketpanggil::tiga');
+$routes->get('/loketpanggil/empat', 'loketpanggil::empat');
 
 /*
  * --------------------------------------------------------------------
