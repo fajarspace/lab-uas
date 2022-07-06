@@ -19,7 +19,7 @@
     <div class="row">
       <!-- Page Heading -->
       <div class="col-12"> Dashboard Antrian </div>
-      <br>
+
       <div class="antrian">
         <h5>Panggilan Antrian</h5>
         <p> A <?php echo $aa; ?> </p>

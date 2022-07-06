@@ -1,14 +1,14 @@
 <?php foreach ($antrian4 as $key => $data4) {
-  $aa = $data4["id"];
+    $aa = $data4["id"];
 } ?>
 <?php foreach ($antrian5 as $key => $data5) {
-  $bb = $data5["id"];
+    $bb = $data5["id"];
 } ?>
 <?php foreach ($antrian6 as $key => $data6) {
-  $cc = $data6["id"];
+    $cc = $data6["id"];
 } ?>
 <?php foreach ($antrian7 as $key => $data7) {
-  $dd = $data7["id"];
+    $dd = $data7["id"];
 } ?>
 
 
@@ -19,89 +19,88 @@
 <!-- Begin Page Content -->
 <div class="container pb-5">
 
-        <?php if (!empty(session()->getFlashdata("success"))) { ?>
- 
+    <?php if (!empty(session()->getFlashdata("success"))) { ?>
+
         <div class="alert alert-success">
             <?php echo session()->getFlashdata("success"); ?>
         </div>
-             
-        <?php } ?>
-        <?php if (!empty(session()->getFlashdata("info"))) { ?>
- 
+
+    <?php } ?>
+    <?php if (!empty(session()->getFlashdata("info"))) { ?>
+
         <div class="alert alert-info">
             <?php echo session()->getFlashdata("info"); ?>
         </div>
-             
-        <?php } ?>
- 
-        <?php if (!empty(session()->getFlashdata("warning"))) { ?>
- 
+
+    <?php } ?>
+
+    <?php if (!empty(session()->getFlashdata("warning"))) { ?>
+
         <div class="alert alert-warning">
             <?php echo session()->getFlashdata("warning"); ?>
         </div>
-             
-        <?php } ?>
 
-<!-- Begin Page Content -->
-<div id="loket2" class="container mt-5 pb-5">
+    <?php } ?>
 
-    <!-- Page Heading -->
+    <!-- Begin Page Content -->
+    <div id="loket2">
+
+        <!-- Page Heading -->
         <div class="col-12">
-            Pelayanan Loket 2
+            Pelayanan Loket 2 (Pengaduan)
         </div>
 
-    <div class=card>
-        <div class="card-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-dilayani">
-                        <div class="dilayani">
-                            <h5>Sedang Dilayani</h5>
-                            <p>B<?php echo $bb; ?></p>
+        <div class=card>
+            <div class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-dilayani">
+                            <div class="dilayani">
+                                <h5>Sedang Dilayani</h5>
+                                <p>B<?php echo $bb; ?></p>
+                            </div>
+                            <button type="button" class="btn-selesai">Selesai</button>
                         </div>
-                        <button type="button" class="btn-selesai">Selesai</button>
-                    </div>
-                    <div class="daftar">
-                        <h4>Daftar Antrian Selanjutnya</h4>
-                        <table class="table" border="1" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>No Antrian</th>
-                                    <th>Panggil</th>
-                                    <th>Keterangan</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>B<?php echo $bb; ?></td>
-                                    <td>
-                                    <?php if (is_numeric($bb)) {
-                                    echo "<a href='" .
-                                      base_url("loketpanggil/edit/" . $bb) .
-                                      "' class='btn btn-success'>Panggil</a>";
-                                  } else {
-                                    echo "<a class='btn btn-danger'>Kosong</a>";
-                                  } ?> 
-                                    </td>
-                                    <td>Ada</td>
-                                </tr>
-                                
-                            </tbody>
-                        </table>
+                        <div class="daftar">
+                            <h4>Daftar Antrian Selanjutnya</h4>
+                            <table class="table" border="1" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>No Antrian</th>
+                                        <th>Panggil</th>
+                                        <th>Keterangan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>B<?php echo $bb; ?></td>
+                                        <td>
+                                            <?php if (is_numeric($bb)) {
+                                                echo "<a href='" .
+                                                    base_url("loketpanggil/edit/" . $bb) .
+                                                    "' class='btn btn-success'>Panggil</a>";
+                                            } else {
+                                                echo "<a class='btn btn-danger'>Kosong</a>";
+                                            } ?>
+                                        </td>
+                                        <td>Ada</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
 
                     </div>
-
                 </div>
             </div>
         </div>
+
+
     </div>
-
-
-</div>
-<!-- /.container-fluid -->
+    <!-- /.container-fluid -->
 
 
 
-<!-- End of Main Content -->
-<?= $this->endSection(); ?>
-
+    <!-- End of Main Content -->
+    <?= $this->endSection(); ?>

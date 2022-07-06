@@ -47,7 +47,7 @@
     <?php } ?>
 
     <div class=card>
-        <div class="card-body">
+        <div class="">
             <div class="container">
                 <div class="row">
                     <div class="col-dilayani">
