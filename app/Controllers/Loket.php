@@ -22,6 +22,9 @@ class Loket extends Controller
  
     public function index()
     {
+        $data = [
+            'title' => 'Ambil Antrian'
+        ];
         $data['loket'] = $this->loket->getLoket();
         echo view('admin/loket/index', $data);
     } 
@@ -37,7 +40,7 @@ class Loket extends Controller
     public function create()
     {   
         $data['pelayanan'] = $this->pelayanan->getPelayanan();
-       return view('admin/loket/create',$data);
+        return view('admin/loket/create',$data);
     } 
 
  public function delete($id)
@@ -58,15 +61,15 @@ class Loket extends Controller
     public function update($id)
     {
     // Mengambil value dari form dengan method POST
-    $name = $this->request->getPost('loket_name');
-    $code = $this->request->getPost('loket_pelayanan_id');
-    $desc = $this->request->getPost('loket_description');
+    $name = $this->request->getPost('nama');
+    $code = $this->request->getPost('pelayanan_id');
+    $desc = $this->request->getPost('keterangan');
  
     // Membuat array collection yang disiapkan untuk insert ke table
     $data = [
-        'loket_name' => $name,
-        'loket_description' => $desc,
-        'loket_pelayanan_id' => $code
+        'nama' => $name,
+        'keterangan' => $desc,
+        'pelayanan_id' => $code
     ];
  
     /* 
@@ -89,16 +92,16 @@ class Loket extends Controller
     public function store()
     {
     // Mengambil value dari form dengan method POST
-    $name = $this->request->getPost('loket_name');
-    $desc = $this->request->getPost('loket_description');
-    $code = $this->request->getPost('loket_pelayanan_id');
+    $name = $this->request->getPost('nama');
+    $desc = $this->request->getPost('keterangan');
+    $code = $this->request->getPost('pelayanan_id');
 
  
     // Membuat array collection yang disiapkan untuk insert ke table
     $data = [
-        'loket_name' => $name,
-        'loket_description' => $desc,
-        'loket_pelayanan_id' => $code
+        'nama' => $name,
+        'keterangan' => $desc,
+        'pelayanan_id' => $code
     ];
  
     /* 

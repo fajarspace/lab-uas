@@ -30,6 +30,7 @@
       <a class="nav-link" href="/antrian">Ambil antrian</a>
       <a class="nav-link" href="/antrianno">Layar antrian</a>
       <a class="nav-link" href="/loketpanggil">Loket Panggil</a>
+      <a class="nav-link" href="/loket">Loket</a>
       <a class="nav-link" href="/pelayanan">Pelayanan</a>
     </div>
   </div>

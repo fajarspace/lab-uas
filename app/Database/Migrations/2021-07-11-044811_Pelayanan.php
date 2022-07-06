@@ -9,26 +9,26 @@ class Pelayanan extends Migration
 	public function up()
 	{
 		$this->forge->addField([
-        'pelayanan_id'          => [
+        'id'          => [
                 'type'           => 'INT',
                 'constraint'     => 11,
                 'unsigned'       => TRUE,
                 'auto_increment' => TRUE
         ],
-        'pelayanan_name'       => [
+        'nama'       => [
                 'type'           => 'VARCHAR',
                 'constraint'     => '100',
         ],
-        'pelayanan_code'       => [
+        'kode'       => [
                 'type'           => 'VARCHAR',
                 'constraint'     => '100',
         ],
-        'pelayanan_description' => [
+        'keterangan' => [
                 'type'           => 'TEXT',
                 'null'           => TRUE,
         ],
     ]);
-    $this->forge->addKey('pelayanan_id', TRUE);
+    $this->forge->addKey('id', TRUE);
     $this->forge->createTable('pelayanan');
 	}
 

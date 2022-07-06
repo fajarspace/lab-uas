@@ -14,7 +14,7 @@ class LoketModel extends Model
                         ->getResultArray();
         } else {
             return $this->table('loket')
-                        ->where('loket_id', $id)
+                        ->where('id', $id)
                         ->get()
                         ->getRowArray();
         }   
@@ -27,11 +27,11 @@ class LoketModel extends Model
 
     public function update_loket($data, $id)
     {
-    return $this->db->table($this->table)->update($data, ['loket_id' => $id]);
+    return $this->db->table($this->table)->update($data, ['id' => $id]);
     } 
 
    public function delete_loket($id)
     {
-    return $this->db->table($this->table)->delete(['loket_id' => $id]);
+    return $this->db->table($this->table)->delete(['id' => $id]);
     } 
 }

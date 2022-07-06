@@ -38,15 +38,15 @@ $a = $data["id"];
             </div>
             <div class="container mt-5 mb-5 text-center"></div>
             <!-- <div class="container">
-                            <?php if (!empty(session()->getFlashdata("success"))) { ?><div class="alert alert-success">
-                            <?php echo session()->getFlashdata("success"); ?></div>
-                            <?php } ?>
-                            <?php if (!empty(session()->getFlashdata("info"))) { ?><div class="alert alert-info">
-                            <?php echo session()->getFlashdata("info"); ?></div>
-                            <?php } ?>
-                            <?php if (!empty(session()->getFlashdata("warning"))) { ?><div class="alert alert-warning">
-                            <?php echo session()->getFlashdata("warning"); ?></div>
-                            <?php } ?></div> -->
+            <?php if (!empty(session()->getFlashdata("success"))) { ?><div class="alert alert-success">
+            <?php echo session()->getFlashdata("success"); ?></div>
+            <?php } ?>
+            <?php if (!empty(session()->getFlashdata("info"))) { ?><div class="alert alert-info">
+            <?php echo session()->getFlashdata("info"); ?></div>
+            <?php } ?>
+            <?php if (!empty(session()->getFlashdata("warning"))) { ?><div class="alert alert-warning">
+            <?php echo session()->getFlashdata("warning"); ?></div>
+            <?php } ?></div> -->
           </div>
         </div>
       </section>

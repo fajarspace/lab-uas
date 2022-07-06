@@ -10,7 +10,7 @@ class Antrian extends Migration
 	{
 		
 		$this->forge->addField([
-        'antrian_id'          => [
+        'id'          => [
                 'type'           => 'INT',
                 'constraint'     => 11,
                 'unsigned'       => TRUE,
@@ -20,16 +20,16 @@ class Antrian extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '100',
         ],
-        'loket_pelayanan_id' => [
+        'pelayanan_id' => [
                 'type'           => 'INT',
                 'constraint'     => '11',
         ],
-        'loket_description' => [
+        'keterangan' => [
                 'type'           => 'TEXT',
                 'null'           => TRUE,
         ],
     ]);
-    $this->forge->addKey('loket_id', TRUE);
+    $this->forge->addKey('id', TRUE);
     $this->forge->createTable('loket');
 	}
 

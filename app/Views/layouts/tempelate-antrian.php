@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- My Style -->
-    <link href="<?php echo base_url('css/style.css'); ?> " rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/style.css'); ?> " rel="stylesheet">
     
     <!-- BOOTSTRAP /-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -32,6 +32,7 @@
       <a class="nav-link" href="/antrian">Ambil antrian</a>
       <a class="nav-link" href="/antrianno">Layar antrian</a>
       <a class="nav-link" href="/loketpanggil">Loket Panggil</a>
+      <a class="nav-link" href="/loket">Loket</a>
       <a class="nav-link" href="/pelayanan">Pelayanan</a>
     </div>
   </div>

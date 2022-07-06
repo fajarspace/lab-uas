@@ -20,11 +20,11 @@
  
             <div class="form-group">
                 <label for="">Nama Loket</label>
-                <input type="text" name="loket_name" class="form-control" placeholder="Nama Keterangan">
+                <input type="text" name="nama" class="form-control" placeholder="Nama Keterangan">
             </div>
             <div class="form-group">
                 <label for="">Jenis Layanan</label>
-            <select name="loket_id" class="form-control" placeholder="Jenis Pelayanan">>
+            <select name="pelayanan_id" class="form-control" placeholder="Jenis Pelayanan">>
 <?php 
                     foreach($pelayanan as $key => $data) { ?>
                         <option value="<?php echo $data['id']; ?>">
@@ -34,7 +34,7 @@
             </div>
             <div class="form-group">
                 <label for="">Keterangan Loket</label>
-                <input type="text" name="loket_description" class="form-control" placeholder="Keterangan Loket">
+                <input type="text" name="keterangan" class="form-control" placeholder="Keterangan Loket">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Simpan</button>

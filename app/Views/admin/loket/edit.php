@@ -16,15 +16,15 @@
     <div class="container">
         <h4>Form Edit Loket</h4>
         <hr>
-        <form action="<?php echo base_url('loket/update/'.$loket['loket_id']); ?>" method="post">
+        <form action="<?php echo base_url('loket/update/'.$loket['id']); ?>" method="post">
  
             <div class="form-group">
                 <label for="">Nama Loket</label>
-                <input type="text" name="loket_name" value="<?php echo $loket['loket_name']; ?>" class="form-control" placeholder="Nama Loket">
+                <input type="text" name="nama" value="<?php echo $loket['nama']; ?>" class="form-control" placeholder="Nama Loket">
             </div>
                <div class="form-group">
                 <label for="">Jenis Loket</label>
-            <select name="loket_id" class="form-control" placeholder="Jenis Pelayanan">>
+            <select name="id" class="form-control" placeholder="Jenis Pelayanan">>
 <?php 
                     foreach($pelayanan as $key => $data) { ?>
                         <option value="<?php echo $data['id']; ?>">
