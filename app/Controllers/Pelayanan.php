@@ -20,6 +20,9 @@ class Pelayanan extends Controller
  
     public function index()
     {
+        $data = [
+            'title' => 'Ambil Antrian'
+        ];
         $data['pelayanan'] = $this->pelayanan->getPelayanan();
         echo view('admin/pelayanan/index', $data);
     }

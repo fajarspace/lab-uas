@@ -11,134 +11,102 @@
   $dd = $data7["id"];
 } ?>
 
-<?= $this->extend('/layouts/tempelate'); ?>
+
+<?= $this->extend('layouts/tempelate'); ?>
 
 <?= $this->section('content'); ?>
 <div class="container" >
+    <!-- Begin Page Content -->
+<div class="container-fluid">
 
-<div class="body-wrap boxed-container">
-  
-<main>
-<section>
-<div class="container">
-<div class="hero-inner">
-<div class="hero-copy">
-    <div class="card text-center bg-light">
-  <div class="card-header" style="font-weight: bold;">
-    Perhatian!
-  </div>
-  <div class="card-body">
-  <h1 style="text-align: center;">Antrian Saat ini adalah</h1>
-    <h1 style="text-align: center;"><?php foreach (
-      $antrianlast
-      as $key => $data40
-    ) {
-      if ($data40["id"] == $aa) {
-        echo "A";
-      }
-      if ($data40["id"] == $bb) {
-        echo "B";
-      }
-      if ($data40["id"] == $cc) {
-        echo "C";
-      }
-      if ($data40["id"] == $dd) {
-        echo "D";
-      }
-      echo $data40["id"];
-    } ?>
-    </h1>
-
-  </div>
-  <div class="card-footer text-muted">
-    @2021
-  </div>
-</div>
-                            
-                        </div>
-
-<!--     <div class="container">
-        <?php if (!empty(session()->getFlashdata("success"))) { ?>
- 
-        <div class="alert alert-success">
-            <?php echo session()->getFlashdata("success"); ?>
-        </div>
-             
-        <?php } ?>
-        <?php if (!empty(session()->getFlashdata("info"))) { ?>
- 
-        <div class="alert alert-info">
-            <?php echo session()->getFlashdata("info"); ?>
-        </div>
-             
-        <?php } ?>
- 
-        <?php if (!empty(session()->getFlashdata("warning"))) { ?>
- 
-        <div class="alert alert-warning">
-            <?php echo session()->getFlashdata("warning"); ?>
-        </div>
-             
-        <?php } ?>
-    </div> -->
-
-<br>
-<br>
+    <div class="card-body">
+        <div class="container">
+            <div class="row">
+                <!-- Page Heading -->
+                <div class="col-12">
+                    Dashboard Antrian
+                </div>
+                <br>
+                <div class="antrian">
+                    <h5>Panggilan Antrian</h5>
+                    <p>
+                    <?php foreach ($antrianlast as $key => $data40) {
+                      if ($data40["id"] == $aa) {
+                        echo "A";
+                      }
+                      if ($data40["id"] == $bb) {
+                        echo "B";
+                      }
+                      if ($data40["id"] == $cc) {
+                        echo "C";
+                      }
+                      if ($data40["id"] == $dd) {
+                        echo "D";
+                      }
+                      echo $data40["id"];
+                    } ?>
+                    </p>
+                    <h5>Loket 1</h5>
+                </div>
+                <div class="col-5">
+                    <div class="carousel-item active ">
+                        <marquee behavior="" direction=""><h1>Antrian saat ini :
+                        <?php foreach ($antrianlast as $key => $data40) {
+                      if ($data40["id"] == $aa) {
+                        echo "A";
+                      }
+                      if ($data40["id"] == $bb) {
+                        echo "B";
+                      }
+                      if ($data40["id"] == $cc) {
+                        echo "C";
+                      }
+                      if ($data40["id"] == $dd) {
+                        echo "D";
+                      }
+                      echo $data40["id"];
+                    } ?>
+                        </h1></marquee>
                     </div>
                 </div>
-            </section>
+                <br>
+                <!-- <div class="antrian">
+                    <h5>Panggilan Antrian</h5>
+                    <p>A03</p>
+                    <h5>Loket 1</h5>
+                </div> -->
 
-<div class="container">
-<div class="row row-cols-1 row-cols-md-2">
-  <div class="col mb-4">
-    <div class="card bg-primary mb-3">
-    <div class="card-header" style="text-align: center; font-weight: bold;">Antrian</div>
-      <div class="card-body">
-        <h5 class="card-title">Cutomer Service</h5>
-        <p class="card-text">Antrian Saat ini A<?php echo $aa; ?></p>
-      </div>
+                
+                <div class="loket">
+                  <p>A<?php echo $aa; ?></p>
+                  <h5>Loket 1</h5>
+                </div>
+                <div class="loket">
+                  <p>B<?php echo $bb; ?></p>
+                  <h5>Loket 1</h5>
+                </div>
+                <div class="loket">
+                  <p>C<?php echo $cc; ?></p>
+                  <h5>Loket 1</h5>
+                </div>
+                <div class="loket">
+                  <p>D<?php echo $dd; ?></p>
+                  <h5>Loket 1</h5>
+                </div>
+
+
+
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card bg-success">
-    <div class="card-header" style="text-align: center; font-weight: bold;">Antrian</div>
-      <div class="card-body">
-        <h5 class="card-title">Pengaduan</h5>
-        <p class="card-text">Antrian Saat ini B<?php echo $bb; ?></p>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card bg-warning">
-    <div class="card-header" style="text-align: center; font-weight: bold;">Antrian</div>
-      <div class="card-body">
-        <h5 class="card-title">Permohonan Baru</h5>
-        <p class="card-text">Antrian Saat ini C<?php echo $cc; ?></p>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card bg-secondary">
-    <div class="card-header" style="text-align: center; font-weight: bold;">Antrian</div>
-      <div class="card-body">
-        <h5 class="card-title">Perpanjangan</h5>
-        <p class="card-text">Antrian Saat ini D<?php echo $dd; ?></p>
-      </div>
-    </div>
-  </div>
 </div>
 
-            </div>            
-        </main>
 
-        <footer class="footer mt-auto py-3">
-  <div class="container">
-    <span class="text-muted">Aplikasi Antrian Dengan Codeigniter 4.</span>
-  </div>
-</footer>
-    </div>
+</div>
+<!-- /.container-fluid -->
 
-    <script src="<?php echo base_url("dist/js/main.min.js"); ?>"></script>
+</div>
+<!-- End of Main Content -->
 
 </div>
 <?= $this->endSection(); ?>

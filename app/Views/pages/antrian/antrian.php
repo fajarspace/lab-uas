@@ -4,33 +4,6 @@
 <div class="container" >
 
 <div class="body-wrap boxed-container">
-<header class="site-header">
-<div class="container">
-    <div class="site-header-inner">
-        <div class="brand header-brand">
-            <h1 class="m-0">
-                <a href="#">
-                <defs>
-                    <linearGradient x1="0%" y1="100%" y2="0%" id="logo-a">
-                        <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
-                        <stop stop-color="#007DFF" offset="100%"/>
-                    </linearGradient>
-                    <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="logo-b">
-                        <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
-                        <stop stop-color="#FF4F7A" offset="100%"/>
-                    </linearGradient>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                    <rect fill="url(#logo-a)" width="32" height="32" rx="16"/>
-                    <rect fill="url(#logo-b)" x="16" width="32" height="32" rx="16"/>
-                </g>
-            </svg>
-        </a>
-    </h1>
-        </div>
-    </div>
-</div>
-</header>
 <?php foreach ($antrian as $key => $data) {
 $a = $data["id"];
 } ?>
@@ -39,41 +12,38 @@ $a = $data["id"];
     <div class="container">
         <div class="hero-inner">
             <div class="hero-copy">
-                <h1 class="hero-title h2-mobile mt-0 is-revealing">Antrian</h1>
                 <br>
                 <div class="container">
                 <div class="card text-center">
   <div class="card-header">
-    Perhatian!
+    NO ANTRIAN
   </div>
   <div class="card-body">
 
-    <h5 class="hero-paragraph is-revealing">
+    <h1 class="hero-paragraph is-revealing">
 
         <?php
         $request = \Config\Services::request();
         $s = $request->uri->getSegment(3);
         if ($s == "4") {
-          echo "Anda Telah mengambil no antrian untuk customer service dengan no antrian <br>A" .
+          echo "A" .
             $a;
         } elseif ($s == "5") {
-          echo "Anda Telah mengambil no antrian untuk pengaduan dengan no antrian <br>B" .
+          echo "B" .
             $a;
         } elseif ($s == "6") {
-          echo "Anda Telah mengambil no antrian untuk Permohonan Baru dengan no antrian <br>C" .
+          echo "C" .
             $a;
         } elseif ($s == "7") {
-          echo "Anda Telah mengantri untuk Perpanjang dengan no antrian <br>D" .
+          echo "D" .
             $a;
         }
         ?>
 
 
-    </h5>
+    </h1>
+    <a href="#">asd</a>
                             
-  </div>
-  <div class="card-footer text-muted">
-    @2021
   </div>
 </div>
                             </div>
