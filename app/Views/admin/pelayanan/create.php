@@ -10,9 +10,6 @@
 </head>
 <body>
  
-    <div class="container mt-5 mb-5 text-center">
-        <h4>Antrian Menggunakan Codeigniter 4</h4>
-    </div>
     <div class="container">
         <h4>Form Tambah Pelayanan</h4>
         <hr>

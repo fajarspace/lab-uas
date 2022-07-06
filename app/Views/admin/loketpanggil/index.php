@@ -90,7 +90,7 @@
                                       base_url("loketpanggil/edit/" . $aa) .
                                       "' class='btn btn-success'>Panggil</a>";
                                   } else {
-                                    echo "Kosong";
+                                    echo "<a class='btn btn-danger'>Kosong</a>";
                                   } ?> 
                                     </td>
                                     <td>Ada</td>
@@ -103,7 +103,7 @@
                                       base_url("loketpanggil/edit/" . $bb) .
                                       "' class='btn btn-success'>Panggil</a>";
                                   } else {
-                                    echo "Kosong";
+                                    echo "<a class='btn btn-danger'>Kosong</a>";
                                   } ?> 
                                     </td>
                                     <td>Ada</td>
@@ -117,7 +117,7 @@
                                       base_url("loketpanggil/edit/" . $cc) .
                                       "' class='btn btn-success'>Panggil</a>";
                                   } else {
-                                    echo "Kosong";
+                                    echo "<a class='btn btn-danger'>Kosong</a>";
                                   } ?> 
   
                                     </td>
@@ -131,7 +131,7 @@
                                       base_url("loketpanggil/edit/" . $dd) .
                                       "' class='btn btn-success'>Panggil</a>";
                                   } else {
-                                    echo "Kosong";
+                                    echo "<a class='btn btn-danger'>Kosong</a>";
                                   } ?> 
                                     </td>
                                     <td>Ada</td>
