@@ -4,26 +4,24 @@
 <div class="container">
   <?php
   if (!empty(session()->getFlashdata('success'))) { ?>
-
     <div class="alert alert-success">
       <?php echo session()->getFlashdata('success'); ?>
     </div>
-
   <?php } ?>
   <?php if (!empty(session()->getFlashdata('info'))) { ?>
-
     <div class="alert alert-info">
       <?php echo session()->getFlashdata('info'); ?>
     </div>
-
   <?php } ?>
-
   <?php if (!empty(session()->getFlashdata('warning'))) { ?>
-
     <div class="alert alert-warning">
       <?php echo session()->getFlashdata('warning'); ?>
     </div>
-
+  <?php } ?>
+  <?php if (!empty(session()->getFlashdata('danger'))) { ?>
+    <div class="alert alert-danger">
+      <?php echo session()->getFlashdata('danger'); ?>
+    </div>
   <?php } ?>
 </div>
 <div class="container">

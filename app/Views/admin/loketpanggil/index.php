@@ -55,7 +55,13 @@
                             <h5>Sedang Dilayani</h5>
                             <p>A<?php echo $aa; ?></p>
                         </div>
-                        <button type="button" class="btn-selesai">Selesai</button>
+                        <?php if (is_numeric($aa)) {
+                            echo "<a href='" .
+                                base_url("loketpanggil/edit/" . $aa) .
+                                "' class='btn btn-lg col-11 btn-warning'>Selesai</a>";
+                        } else {
+                            echo "<a class='btn btn-lg col-11 btn-danger'>Tidak ada antrian</a>";
+                        } ?>
                     </div>
                     <div class="daftar">
                         <h4>Daftar Antrian Selanjutnya</h4>
@@ -70,14 +76,7 @@
                             <tbody>
                                 <tr>
                                     <td>A<?php echo $aa; ?></td>
-                                    <td>
-                                        <?php if (is_numeric($aa)) {
-                                            echo "<a href='" .
-                                                base_url("loketpanggil/edit/" . $aa) .
-                                                "' class='btn btn-success'>Panggil</a>";
-                                        } else {
-                                            echo "<a class='btn btn-danger'>Kosong</a>";
-                                        } ?>
+                                    <td><a class="btn btn-success" href="">Panggil</a>
                                     </td>
                                     <td>Ada</td>
                                 </tr>

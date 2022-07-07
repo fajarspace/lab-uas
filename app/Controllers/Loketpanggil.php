@@ -82,7 +82,7 @@ class Loketpanggil extends Controller
         // Jika berhasil melakukan ubah
         if ($ubah) {
             // Deklarasikan session flashdata dengan tipe info
-            session()->setFlashdata('info', 'Nomor antrian ' . $id . ' berhasil di panggil');
+            session()->setFlashdata('info', 'Nomor antrian ' . $id . ' Selesai!');
             // Redirect ke halaman antrian
             return redirect()->to(base_url('loketpanggil'));
         }

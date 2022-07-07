@@ -12,6 +12,10 @@
     <div class="alert alert-warning"> <?php echo session()->getFlashdata('warning'); ?>
     </div>
   <?php } ?>
+  <?php if (!empty(session()->getFlashdata('danger'))) { ?>
+    <div class="alert alert-danger"> <?php echo session()->getFlashdata('danger'); ?>
+    </div>
+  <?php } ?>
 </div>
 <div class="container">
   <a href="
