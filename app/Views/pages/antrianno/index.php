@@ -15,7 +15,6 @@
 <!-- Begin Page Content -->
 <div class="container">
   <div class="card-body">
-
     <div class="row">
       <!-- Page Heading -->
       <div class="col-12"> Dashboard Antrian </div>
@@ -26,16 +25,27 @@
         <h5>Loket 1</h5>
       </div>
       <div class="antrian-layar">
+        <p id="time"></p>
+        </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+          var timestamp = '<?= time(); ?>';
 
-        <h1>Antrian saat ini : <br>
-        </h1>
+          function updateTime() {
+            $('#time').html(Date(timestamp));
+            timestamp++;
+          }
+          $(function() {
+            setInterval(updateTime, 1000);
+          });
+        </script>
         <tr>
           <marquee behavior="" direction="">
             <td>
-              <h2>Loket 1 : A <?php echo $aa; ?>, Loket 2 : B <?php echo $bb; ?>, Loket 3 : C <?php echo $cc; ?>, Loket 4 : D <?php echo $dd; ?> </h2>
+              <h2>Antrian saat ini : Loket 1 : A <?php echo $aa; ?>, Loket 2 : B <?php echo $bb; ?>, Loket 3 : C <?php echo $cc; ?>, Loket 4 : D <?php echo $dd; ?> </h2>
             </td>
           </marquee>
-          <td><img width="288" src="https://c.tenor.com/rec5dlPBK2cAAAAd/mr-bean-waiting.gif" alt=""></td>
+          <td><img width="315" src="https://c.tenor.com/rec5dlPBK2cAAAAd/mr-bean-waiting.gif" alt=""></td>
         </tr>
 
       </div>
