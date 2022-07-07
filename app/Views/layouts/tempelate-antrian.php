@@ -12,8 +12,10 @@
   <!-- BOOTSTRAP /-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-  <!-- FONTAWESOME /-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script>
     setTimeout(function() {
@@ -27,7 +29,9 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
     <div class="container">
-      <a class="navbar-brand" href="#">Sistem Antrian</a>
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-clock"></i>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -45,20 +49,7 @@
 
   <?= $this->renderSection('content'); ?>
 
-  <footer class="footer mt-5 py-3">
-    <div class="container">
-      <a style="text-decoration: underline;" href="https://saweria.co/fajarspace" class="text-muted">Buy me a Coffee ☕️ </a> <br>
-      <span>
-        &copy; <script>
-          document.write(new Date().getFullYear());
-        </script> |
-        < /> dengan Love ❤️
-      </span>
-    </div>
-  </footer>
   <script src="assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

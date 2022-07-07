@@ -12,8 +12,10 @@
   <!-- BOOTSTRAP /-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-  <!-- FONTAWESOME /-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
   <title><?= $title; ?></title>
@@ -23,12 +25,14 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
     <div class="container">
-      <a class="navbar-brand" href="#">Sistem Antrian</a>
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-clock"></i>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div class="navbar-nav ms-auto ">
           <a class="nav-link" href="/antrian">Ambil antrian</a>
           <a class="nav-link" href="/antrianno">Layar antrian</a>
           <li class="nav-item dropdown">

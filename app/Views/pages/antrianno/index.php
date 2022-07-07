@@ -25,25 +25,19 @@
         <p> A <?php echo $aa; ?> </p>
         <h5>Loket 1</h5>
       </div>
-      <div class="antrian">
-        <marquee behavior="" direction="">
-          <h1>Antrian saat ini : <br>
-          </h1>
-          <tr>
+      <div class="antrian-layar">
+
+        <h1>Antrian saat ini : <br>
+        </h1>
+        <tr>
+          <marquee behavior="" direction="">
             <td>
-              <h2>Loket 1 : A <?php echo $aa; ?> </h2>
+              <h2>Loket 1 : A <?php echo $aa; ?>, Loket 2 : B <?php echo $bb; ?>, Loket 3 : C <?php echo $cc; ?>, Loket 4 : D <?php echo $dd; ?> </h2>
             </td>
-            <td>
-              <h2>Loket 2 : B <?php echo $bb; ?> </h2>
-            </td>
-            <td>
-              <h2>Loket 3 : C <?php echo $cc; ?> </h2>
-            </td>
-            <td>
-              <h2>Loket 4 : D <?php echo $dd; ?> </h2>
-            </td>
-          </tr>
-        </marquee>
+          </marquee>
+          <td><img width="288" src="https://c.tenor.com/rec5dlPBK2cAAAAd/mr-bean-waiting.gif" alt=""></td>
+        </tr>
+
       </div>
 
       <br>

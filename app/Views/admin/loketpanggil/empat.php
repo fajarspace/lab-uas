@@ -50,8 +50,8 @@
             Pelayanan Loket 4 (Perpanjangan)
         </div>
 
-        <div class=card>
-            <div class="card-body">
+        <div class="card">
+            <div class="">
                 <div class="container">
                     <div class="row">
                         <div class="col-dilayani">
@@ -59,7 +59,13 @@
                                 <h5>Sedang Dilayani</h5>
                                 <p>D<?php echo $dd; ?></p>
                             </div>
-                            <button type="button" class="btn-selesai">Selesai</button>
+                            <?php if (is_numeric($dd)) {
+                                echo "<a href='" .
+                                    base_url("loketpanggil/edit/" . $dd) .
+                                    "' class='btn btn-lg col-11 btn-warning'>Selesai</a>";
+                            } else {
+                                echo "<a class='btn btn-lg col-11 btn-danger'>Tidak ada antrian</a>";
+                            } ?>
                         </div>
                         <div class="daftar">
                             <h4>Daftar Antrian Selanjutnya</h4>
@@ -75,12 +81,10 @@
                                     <tr>
                                         <td>D<?php echo $dd; ?></td>
                                         <td>
-                                            <?php if (is_numeric($dd)) {
-                                                echo "<a href='" .
-                                                    base_url("loketpanggil/edit/" . $dd) .
-                                                    "' class='btn btn-success'>Panggil</a>";
+                                            <?php if (is_numeric($aa)) {
+                                                echo "<a href='' class='btn btn-sm col-11 btn-success'>Panggil</a>";
                                             } else {
-                                                echo "<a class='btn btn-danger'>Kosong</a>";
+                                                echo "<a class='btn btn-sm col-11 btn-danger'>kosong</a>";
                                             } ?>
                                         </td>
                                         <td>Ada</td>

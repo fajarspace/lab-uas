@@ -1,34 +1,5 @@
-
-.col-a {
-    background-color: #E69138;
-    font-size: 64px;
-    color: #fff;
-    text-align: center;
-    width: 1000px;
-    height: 100px;
-    font-weight: bold;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-.col-b {
-    background-color: #6D9EEB;
-    font-size: 45px;
-    color: #fff;
-    text-align: center;
-    height: 100px;
-    width: 485px;
-    font-weight: bold;
-    border-radius: 10px;
-    margin: 10px 10px 20px 10px;
-    padding: 10px 0 0 0 ;
-}
-.col-b a{
-    text-decoration: none;
-    color: #fff;
-}
-.btn btn-primary{
-    padding: 500px;
-}
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /* css antrian */
 .col-12{
@@ -46,6 +17,13 @@
     height: 270px;
     margin-right: 40px;
     margin-bottom: 15px;
+}
+.antrian-layar{
+    width: 470px;
+    height: 270px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    padding: 5px auto;
 }
 .antrian h5{
     color: #fff;

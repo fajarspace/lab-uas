@@ -46,7 +46,7 @@
 
     <?php } ?>
 
-    <div class=card>
+    <div class="card">
         <div class="">
             <div class="container">
                 <div class="row">
@@ -77,8 +77,11 @@
                                 <tr>
                                     <td>A<?php echo $aa; ?></td>
                                     <td>
-                                        <div id="liveAlertPlaceholder"></div>
-                                        <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+                                        <?php if (is_numeric($aa)) {
+                                            echo "<a href='' class='btn btn-sm col-11 btn-success'>Panggil</a>";
+                                        } else {
+                                            echo "<a class='btn btn-sm col-11 btn-danger'>kosong</a>";
+                                        } ?>
                                     </td>
                                     <td>Ada</td>
                                 </tr>
@@ -94,15 +97,5 @@
 </div>
 <!-- /.container-fluid -->
 
-<script>
-    $(document).ready(function() {
-        $("#success-alert").hide();
-        $("#myWish").click(function showAlert() {
-            $("#success-alert").fadeTo(1000, 500).slideUp(500, function() {
-                $("#success-alert").slideUp(500);
-            });
-        });
-    });
-</script>
 <!-- End of Main Content -->
 <?= $this->endSection(); ?>

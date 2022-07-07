@@ -50,7 +50,7 @@
             Pelayanan Loket 2 (Pengaduan)
         </div>
 
-        <div class=card>
+        <div class="card">
             <div class="">
                 <div class="container">
                     <div class="row">
@@ -59,7 +59,13 @@
                                 <h5>Sedang Dilayani</h5>
                                 <p>B<?php echo $bb; ?></p>
                             </div>
-                            <button type="button" class="btn-selesai">Selesai</button>
+                            <?php if (is_numeric($bb)) {
+                                echo "<a href='" .
+                                    base_url("loketpanggil/edit/" . $bb) .
+                                    "' class='btn btn-lg col-11 btn-warning'>Selesai</a>";
+                            } else {
+                                echo "<a class='btn btn-lg col-11 btn-danger'>Tidak ada antrian</a>";
+                            } ?>
                         </div>
                         <div class="daftar">
                             <h4>Daftar Antrian Selanjutnya</h4>
@@ -75,12 +81,10 @@
                                     <tr>
                                         <td>B<?php echo $bb; ?></td>
                                         <td>
-                                            <?php if (is_numeric($bb)) {
-                                                echo "<a href='" .
-                                                    base_url("loketpanggil/edit/" . $bb) .
-                                                    "' class='btn btn-success'>Panggil</a>";
+                                            <?php if (is_numeric($aa)) {
+                                                echo "<a href='' class='btn btn-sm col-11 btn-success'>Panggil</a>";
                                             } else {
-                                                echo "<a class='btn btn-danger'>Kosong</a>";
+                                                echo "<a class='btn btn-sm col-11 btn-danger'>kosong</a>";
                                             } ?>
                                         </td>
                                         <td>Ada</td>
