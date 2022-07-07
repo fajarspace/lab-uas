@@ -76,7 +76,9 @@
                             <tbody>
                                 <tr>
                                     <td>A<?php echo $aa; ?></td>
-                                    <td><a class="btn btn-success" href="">Panggil</a>
+                                    <td>
+                                        <div id="liveAlertPlaceholder"></div>
+                                        <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
                                     </td>
                                     <td>Ada</td>
                                 </tr>
@@ -92,6 +94,15 @@
 </div>
 <!-- /.container-fluid -->
 
-
+<script>
+    $(document).ready(function() {
+        $("#success-alert").hide();
+        $("#myWish").click(function showAlert() {
+            $("#success-alert").fadeTo(1000, 500).slideUp(500, function() {
+                $("#success-alert").slideUp(500);
+            });
+        });
+    });
+</script>
 <!-- End of Main Content -->
 <?= $this->endSection(); ?>
