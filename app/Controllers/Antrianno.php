@@ -22,9 +22,8 @@ class Antrianno extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Ambil Antrian'
+            'title' => 'Layar Antrian'
         ];
-
         $data['antrian4'] = $this->antrian->getAntrianno(4);
         $data['antrian5'] = $this->antrian->getAntrianno(5);
         $data['antrian6'] = $this->antrian->getAntrianno(6);

@@ -24,7 +24,7 @@ class Loket extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Ambil Antrian'
+            'title' => 'Loket'
         ];
         $data['loket'] = $this->loket->getLoket();
         echo view('admin/loket/index', $data);
@@ -32,7 +32,7 @@ class Loket extends Controller
     public function edit($id)
     {
         $data = [
-            'title' => 'Ambil Antrian'
+            'title' => 'Edit Loket'
         ];
         // Memanggil function getLoket($id) dengan parameter $id di dalam LoketModel dan menampungnya di variabel array loket
         $data['loket'] = $this->loket->getLoket($id);
@@ -43,6 +43,9 @@ class Loket extends Controller
 
     public function create()
     {
+        $data = [
+            'title' => 'Tambah Loket'
+        ];
         $data['pelayanan'] = $this->pelayanan->getPelayanan();
         return view('admin/loket/create', $data);
     }

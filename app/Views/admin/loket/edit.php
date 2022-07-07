@@ -2,7 +2,7 @@
 
 <?= $this->section('content'); ?>
 <div class="container">
-    <h4>Form Edit Loket</h4>
+    <h4>Edit Loket</h4>
     <hr>
     <form action="<?php echo base_url('loket/update/' . $loket['id']); ?>" method="post">
 

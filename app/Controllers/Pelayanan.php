@@ -30,6 +30,9 @@ class Pelayanan extends Controller
 
     public function edit($id)
     {
+        $data = [
+            'title' => 'Edit Pelayanan'
+        ];
         // Memanggil function getProduct($id) dengan parameter $id di dalam PelayananModel dan menampungnya di variabel array pelayanan
         $data['pelayanan'] = $this->pelayanan->getPelayanan($id);
         // Mengirim data ke dalam view
@@ -38,7 +41,10 @@ class Pelayanan extends Controller
 
     public function create()
     {
-        return view('admin/pelayanan/create');
+        $data = [
+            'title' => 'Tambah Pelayanan'
+        ];
+        return view('admin/pelayanan/create', $data);
     }
 
     public function delete($id)
