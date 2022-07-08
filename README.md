@@ -1,3 +1,7 @@
+## App Sistem Antrian Loket
+Oleh Fajar Agung Nugroho
+
+
 ## Link
 
 - [Dokumentasi](https://youtu.be/gaguOyJWFFo)
