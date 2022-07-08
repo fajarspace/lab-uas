@@ -4,7 +4,7 @@
 
 - [Dokumentasi](https://youtu.be/gaguOyJWFFo)
 
-- [Demo program](http://antriansistem.rf.gd/)
+- [Demo program](http://antriansistem.rf.gd/){:target="_blank"}
 
 ## Getting Started
 
