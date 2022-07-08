@@ -1,6 +1,6 @@
 ## Link
 
-- [Dokumentasi]()
+- [Dokumentasi](https://youtu.be/gaguOyJWFFo)
 
 - [Demo program](http://antriansistem.rf.gd/)
 
