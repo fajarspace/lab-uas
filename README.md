@@ -31,7 +31,7 @@ You are using PHP 8.1, and you need at least codeigniter 4.1.7
 
 Solutions:
 
-- Option1: Downgrade PHP (7.4)
+- Option1: Downgrade PHP 7.4
 - Option2: Upgrade Codeigniter
 
 Reference: https://codeigniter.com/user_guide/changelogs/v4.1.7.html
