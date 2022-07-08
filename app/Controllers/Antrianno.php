@@ -11,12 +11,8 @@ class Antrianno extends Controller
     public function __construct()
     {
 
-        // Mendeklarasikan class ProductModel menggunakan $this->antrian
+        // Mendeklarasikan class AntrianModel menggunakan $this->antrian
         $this->antrian = new AntrianModel();
-        /* Catatan:
-        Apa yang ada di dalam function construct ini nantinya bisa digunakan
-        pada function di dalam class Product 
-        */
     }
 
     public function index()

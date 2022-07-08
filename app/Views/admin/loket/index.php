@@ -36,8 +36,9 @@
         <th>Layanan</th>
         <th>Aksi</th>
       </thead>
-      <tbody> <?php
-              foreach ($loket as $key => $data) { ?> <tr>
+      <tbody>
+        <?php foreach ($loket as $key => $data) { ?>
+          <tr>
             <td> <?php echo $key + 1; ?> </td>
             <td> <?php echo $data['nama']; ?> </td>
             <td> <?php echo $data['keterangan']; ?> </td>
@@ -53,7 +54,8 @@
                 </a>
               </div>
             </td>
-          </tr> <?php } ?> </tbody>
+          </tr> <?php } ?>
+      </tbody>
     </table>
   </div>
 </div>

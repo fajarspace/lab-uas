@@ -13,10 +13,6 @@ class Pelayanan extends Controller
 
         // Mendeklarasikan class PelayananModel menggunakan $this->pelayanan
         $this->pelayanan = new PelayananModel();
-        /* Catatan:
-        Apa yang ada di dalam function construct ini nantinya bisa digunakan
-        pada function di dalam class pelayanan
-        */
     }
 
     public function index()
@@ -33,7 +29,7 @@ class Pelayanan extends Controller
         $data = [
             'title' => 'Edit Pelayanan'
         ];
-        // Memanggil function getProduct($id) dengan parameter $id di dalam PelayananModel dan menampungnya di variabel array pelayanan
+        // Memanggil function getPelayanan($id) dengan parameter $id di dalam PelayananModel dan menampungnya di variabel array pelayanan
         $data['pelayanan'] = $this->pelayanan->getPelayanan($id);
         // Mengirim data ke dalam view
         return view('admin/pelayanan/edit', $data);
@@ -56,7 +52,7 @@ class Pelayanan extends Controller
         if ($hapus) {
             // Deklarasikan session flashdata
             session()->setFlashdata('danger', 'Deleted pelayanan berhasil!');
-            // Redirect ke halaman product
+            // Redirect ke halaman Pelayanan
             return redirect()->to(base_url('pelayanan'));
         }
     }

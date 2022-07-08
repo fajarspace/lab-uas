@@ -15,10 +15,6 @@ class Loket extends Controller
         // Mendeklarasikan class LoketModel menggunakan $this->loket
         $this->loket = new LoketModel();
         $this->pelayanan = new PelayananModel();
-        /* Catatan:
-        Apa yang ada di dalam function construct ini nantinya bisa digunakan
-        pada function di dalam class Loket
-        */
     }
 
     public function index()
