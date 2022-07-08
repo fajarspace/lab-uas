@@ -81,7 +81,7 @@
                                     <tr>
                                         <td>D<?php echo $dd; ?></td>
                                         <td>
-                                            <?php if (is_numeric($aa)) {
+                                            <?php if (is_numeric($dd)) {
                                                 echo "<a href='' class='btn btn-sm col-11 btn-success'>Panggil</a>";
                                             } else {
                                                 echo "<a class='btn btn-sm col-11 btn-danger'>kosong</a>";

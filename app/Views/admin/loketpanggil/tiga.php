@@ -81,7 +81,7 @@
                                     <tr>
                                         <td>C<?php echo $cc; ?></td>
                                         <td>
-                                            <?php if (is_numeric($aa)) {
+                                            <?php if (is_numeric($cc)) {
                                                 echo "<a href='' class='btn btn-sm col-11 btn-success'>Panggil</a>";
                                             } else {
                                                 echo "<a class='btn btn-sm col-11 btn-danger'>kosong</a>";

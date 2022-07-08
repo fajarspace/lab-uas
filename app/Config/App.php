@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'http://antrian.local/';
+	public $baseURL = '';
 
 	/**
 	 * --------------------------------------------------------------------------
