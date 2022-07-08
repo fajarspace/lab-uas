@@ -17,7 +17,7 @@
 
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-  <title><?= $title; ?></title>
+  <title><?= $title; ?> - Sistem Antrian</title>
 </head>
 
 <body>
@@ -44,14 +44,14 @@
 
   <?= $this->renderSection('content'); ?>
 
-  <footer class="footer mt-5 py-3">
+  <footer class="footer mt-5 py-3 text-center">
     <div class="container">
-      <a style="text-decoration: underline;" href="https://saweria.co/fajarspace" class="text-muted">Buy me a Coffee ☕️ </a> <br>
+      <a style="text-decoration: underline;" href="https://saweria.co/fajarspace" class="text-muted">Buy me a Coffee <i class="fa-solid fa-mug-hot"></i> </a> <br>
       <span>
         &copy; <script>
           document.write(new Date().getFullYear());
-        </script> |
-        < /> dengan Love ❤️
+        </script> Fajar Agung |
+        <i class="fa-solid fa-code"></i> dengan <i class="fa-solid fa-heart"></i>
       </span>
     </div>
   </footer>

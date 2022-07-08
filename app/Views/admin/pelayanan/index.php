@@ -1,4 +1,4 @@
-<?= $this->extend('/layouts/tempelate'); ?>
+<?= $this->extend('/layouts/tempelate-admin'); ?>
 <?= $this->section('content'); ?>
 <div class="container">
   <?php
