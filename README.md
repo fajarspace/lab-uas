@@ -7,7 +7,8 @@
 ## Usage
 
 ```shell
-assets/sistem-antrian
+git clone https://github.com/fajaragngn/lab-uas.git
+cd lab-uas
 ```
 
 open terminal
