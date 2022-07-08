@@ -1,8 +1,6 @@
 ## App Sistem Antrian Loket
 ![](https://img.shields.io/badge/codeigniter-%23563D7C.svg?style=for-the-badge&logo=codeigniter&logoColor=white) ![](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-Oleh Fajar Agung Nugroho
-
 ## Link
 
 - [Dokumentasi](https://youtu.be/gaguOyJWFFo)
