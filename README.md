@@ -6,7 +6,7 @@
 
 - [Demo program](http://antriansistem.rf.gd/)
 
-## Usage
+## Getting Started
 
 ```shell
 git clone https://github.com/fajaragngn/lab-uas.git
