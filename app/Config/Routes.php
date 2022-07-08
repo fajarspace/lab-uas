@@ -7,8 +7,7 @@ $routes = Services::routes();
 
 // Load the system's routing file first, so that the app and ENVIRONMENT
 // can override as needed.
-if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
-{
+if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
 	require SYSTEMPATH . 'Config/Routes.php';
 }
 
@@ -34,9 +33,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/antrian', 'Tpelayanan::antrianindex');
-$routes->get('/loketpanggil/dua', 'loketpanggil::dua');
-$routes->get('/loketpanggil/tiga', 'loketpanggil::tiga');
-$routes->get('/loketpanggil/empat', 'loketpanggil::empat');
+$routes->get('/loketpanggil/dua', 'Loketpanggil::dua');
+$routes->get('/loketpanggil/tiga', 'Loketpanggil::tiga');
+$routes->get('/loketpanggil/empat', 'Loketpanggil::empat');
 
 /*
  * --------------------------------------------------------------------
@@ -51,7 +50,6 @@ $routes->get('/loketpanggil/empat', 'loketpanggil::empat');
  * You will have access to the $routes object within that file without
  * needing to reload it.
  */
-if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
-{
+if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 	require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
