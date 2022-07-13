@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 08, 2022 at 01:24 PM
+-- Generation Time: Jul 13, 2022 at 05:25 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -76,7 +76,7 @@ INSERT INTO `antrian` (`id`, `tanggal`, `status`, `waktu_panggil`, `waktu_selesa
 (31, '22-07-06 11:31:40', 'selesai', NULL, NULL, 4, 1, NULL),
 (32, '22-07-06 11:32:59', 'selesai', NULL, NULL, 5, 1, NULL),
 (33, '22-07-06 21:54:52', 'selesai', NULL, NULL, 4, 1, NULL),
-(34, '22-07-06 21:57:11', 'berlansung', NULL, NULL, 5, 1, NULL),
+(34, '22-07-06 21:57:11', 'selesai', NULL, NULL, 5, 1, NULL),
 (35, '22-07-06 21:57:15', 'selesai', NULL, NULL, 6, 1, NULL),
 (36, '22-07-06 21:57:18', 'berlansung', NULL, NULL, 7, 1, NULL),
 (37, '22-07-06 21:57:27', 'selesai', NULL, NULL, 4, 1, NULL),
@@ -98,14 +98,64 @@ INSERT INTO `antrian` (`id`, `tanggal`, `status`, `waktu_panggil`, `waktu_selesa
 (53, '22-07-07 05:25:43', 'selesai', NULL, NULL, 4, 1, NULL),
 (54, '22-07-07 05:39:27', 'selesai', NULL, NULL, 4, 1, NULL),
 (55, '22-07-07 05:39:27', 'selesai', NULL, NULL, 4, 1, NULL),
-(56, '22-07-07 05:44:05', 'mengantri', NULL, NULL, 5, 1, NULL),
+(56, '22-07-07 05:44:05', 'berlansung', NULL, NULL, 5, 1, NULL),
 (57, '22-07-07 05:44:05', 'mengantri', NULL, NULL, 5, 1, NULL),
 (58, '22-07-07 05:46:43', 'mengantri', NULL, NULL, 5, 1, NULL),
 (59, '22-07-07 05:46:43', 'mengantri', NULL, NULL, 5, 1, NULL),
 (60, '22-07-07 08:07:04', 'selesai', NULL, NULL, 4, 1, NULL),
 (61, '22-07-07 08:07:04', 'selesai', NULL, NULL, 4, 1, NULL),
 (62, '22-07-08 01:49:22', 'selesai', NULL, NULL, 4, 1, NULL),
-(63, '22-07-08 01:49:22', 'selesai', NULL, NULL, 4, 1, NULL);
+(63, '22-07-08 01:49:22', 'selesai', NULL, NULL, 4, 1, NULL),
+(64, '22-07-08 07:33:06', 'selesai', NULL, NULL, 4, 1, NULL),
+(65, '22-07-08 07:33:06', 'selesai', NULL, NULL, 4, 1, NULL),
+(66, '22-07-08 07:49:14', 'selesai', NULL, NULL, 4, 1, NULL),
+(67, '22-07-08 07:49:14', 'selesai', NULL, NULL, 4, 1, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `loket`
+--
+
+CREATE TABLE `loket` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `keterangan` tinytext NOT NULL,
+  `pelayanan_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `loket`
+--
+
+INSERT INTO `loket` (`id`, `nama`, `keterangan`, `pelayanan_id`) VALUES
+(2, 'Loket 1', 'Pelayanan Customer Services', 0),
+(3, 'Loket 2', 'Pelayanan Pengaduan', 5),
+(4, 'Loket 3', 'Pelayanan Permohonan Baru', 6),
+(5, 'Loket 4', 'Pelayanan Perpanjangan', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pelayanan`
+--
+
+CREATE TABLE `pelayanan` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `kode` varchar(100) NOT NULL,
+  `keterangan` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `pelayanan`
+--
+
+INSERT INTO `pelayanan` (`id`, `nama`, `kode`, `keterangan`) VALUES
+(4, 'Customer Services', 'A', 'Layanan konsumen'),
+(5, 'Pengaduan', 'B', 'Layanan pengaduan'),
+(6, 'Permohonan Baru', 'C', 'Layanan permohonan baru'),
+(7, 'Perpanjangan', 'D', 'Layanan Perpanjangan');
 
 --
 -- Indexes for dumped tables
@@ -118,6 +168,18 @@ ALTER TABLE `antrian`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `loket`
+--
+ALTER TABLE `loket`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pelayanan`
+--
+ALTER TABLE `pelayanan`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -125,7 +187,19 @@ ALTER TABLE `antrian`
 -- AUTO_INCREMENT for table `antrian`
 --
 ALTER TABLE `antrian`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+
+--
+-- AUTO_INCREMENT for table `loket`
+--
+ALTER TABLE `loket`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `pelayanan`
+--
+ALTER TABLE `pelayanan`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
